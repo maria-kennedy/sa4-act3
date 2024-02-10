@@ -1,9 +1,18 @@
-number = 10
-
+number = '10'
 print("I'm thinking of a number...")
-guess = int(input("What number am I thinking of? "))
+guess = 0
 
-if guess == number:
-   print("Congratulations! You guessed the right number.")
-else:
-   print(f"Sorry! The number was {number}.")
+while guess != 'q':   
+    
+    guess = input("What number am I thinking of? (or q to exit) ")
+    
+    if guess == 'q':
+        print(f"The number was {number}. \nBye!")
+        break
+
+    elif guess == number:
+        print("Congratulations! You guessed the right number.")
+        break
+    
+    else:
+        print("Try again!")
