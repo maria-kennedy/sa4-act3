@@ -1,4 +1,5 @@
 number = 10
+number = 10
 print("I'm thinking of a number...")
 guess = 0
 max_guesses = 5 
